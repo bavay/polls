@@ -84,7 +84,7 @@ table .icon-close {
 
 table .icon-checkmark {
 	cursor: pointer;
-	background-color: #ebf5d6;
+	background-color: #ebf5d6; /*green*/
 	padding: 0 5px;
 	background-image: url('../img/yes-vote.svg');
 }
