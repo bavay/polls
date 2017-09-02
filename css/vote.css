@@ -85,15 +85,22 @@ th.external input{
 }
 
 .poll-cell-is, .poll-cell-active-is, .date-text-selected, .selected-all {
-    background-color: #6fff70; /*green*/
-    background-image: url('../img/yes.svg');
+    background-image: url('../img/yes-vote.svg');
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.2s;
 }
 
+.poll-cell-maybe, .poll-cell-active-maybe {
+    background-image: url('../img/maybe-vote.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s;
+}
+
+
 .poll-cell-not, .poll-cell-active-not, .date-text-not-selected, .selected-none {
-    background-image: url('../img/no.svg');
+    background-image: url('../img/no-vote.svg');
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.2s;
@@ -148,18 +155,20 @@ th.external input{
 
 td.total {
     padding: 2px 0 1px;
-    color: #FFF;
     font-weight: bold;
 }
 
 .color_yes, .poll-cell-is, .poll-cell-active-is {
-    background-color: #6fff70; /*green*/
+    background-color: #ebf5d6; /*green*/
+	color: #49bc49;
 }
 .color_no, .poll-cell-not, .poll-cell-active-not {
-    background-color: #ff6f6f; /*red*/
+    background-color: #ffede9; /*red*/
+	color: #f45573;
 }
 .color_maybe, .poll-cell-maybe, .poll-cell-active-maybe, .poll-cell-un, .poll-cell-active-un {
-    background-color: #fcff6f; /*yellow*/
+    background-color: #fff4c8; /*yellow*/
+	color: #ffc107;
 }
 
 .home-link {
