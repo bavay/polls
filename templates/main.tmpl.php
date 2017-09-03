@@ -10,11 +10,16 @@
 <div id="app-navigation">
 </div>
 
-
     <div id="app-content">
         <div id="app-content-wrapper">
                 <div id="controls">
-                    <h2><?php p($l->t('Summary')); ?></h>
+                    <h2><?php p($l->t('Summary')); ?></h2>
+                    <div class="actions creatable" style="">
+                        <a href="<?php p($urlGenerator->linkToRoute('polls.page.create_poll')); ?>" class="button new">
+                            <span class="icon icon-add"></span><span class="hidden-visually">Neu</span>
+                        </a>
+                        <input class="stop icon-close" style="display:none" value="" type="button">
+                    </div>
                 </div>
     <?php if(count($_['polls']) === 0) : ?>
         <?php p($l->t('No existing polls.')); ?>
@@ -158,7 +163,6 @@
             <form id="form_delete_poll" name="form_delete_poll" action="<?php p($urlGenerator->linkToRoute('polls.page.delete_poll')); ?>" method="POST">
             </form>
     <?php endif; ?>
-            <a href="<?php p($urlGenerator->linkToRoute('polls.page.create_poll')); ?>"><input type="button" id="submit_new_poll" class="icon-add button btn" /></a>
             
         </div>
     </div>
