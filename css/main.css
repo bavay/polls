@@ -3,11 +3,6 @@ h1 {
     margin-bottom: 5px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin: 10px 0 5px 0;
-}
-
 a {
     color: #35537a;
 }
@@ -66,12 +61,6 @@ input[type="text"] {
 textarea {
     min-width: 100%;
     max-width: 100%;
-}
-
-
-table {
-    border: 1px solid #DDD;
-    border-radius: 3px;
 }
 
 .form-actions {
