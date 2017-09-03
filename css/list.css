@@ -1,5 +1,4 @@
-
-/* temp fix */
+/* 
     #app-navigation.without-app-settings {
         display:none;
     }
@@ -7,11 +6,12 @@
     #app-navigation + #app-content #controls {
         left: 15px;
     }
-/* temp fix */
 
+ */
 
-h2 {
+#controls h2 {
 	float: left;
+	padding: 15px 15px 0 15px;
 }
 
 .actions.creatable {
@@ -52,6 +52,11 @@ h2 {
 	padding-left: 15px;
 }
 
+#pollstable tbody tr:hover, #pollstable tbody tr:focus, #pollstable tbody .name:focus, #pollstable tbody tr:active, #pollstable tbody tr.highlighted, #pollstable tbody tr.highlighted .name:focus, #pollstable tbody tr.selected, #pollstable tbody tr.searchresult, table tr.mouseOver td {
+	transition: background-color 0.3s ease;
+	background-color: #f8f8f8;
+}
+
 table th, table th a {
 	color: #999;
 }
@@ -60,8 +65,22 @@ table th, table td {
 	border-bottom: 1px solid #eee;
 	text-align: left;
 	font-weight: normal;
+   	height: 50px;
+	line-height: 50px;
 }
 
 table thead th {
 	background-color: #fff;
 }
+
+table th .sort-indicator {
+	width: 10px;
+	height: 8px;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
