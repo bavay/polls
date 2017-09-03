@@ -1,34 +1,56 @@
-table {
-    width: 100%;
+
+/* temp fix */
+    #app-navigation.without-app-settings {
+        display:none;
+    }
+
+    #app-navigation + #app-content #controls {
+        left: 15px;
+    }
+/* temp fix */
+
+.app-polls #app-content {
+	transition: background-color 0.3s ease;
+	overflow-x: hidden;
+}
+
+#pollstable {
+	position: relative;
+	width: 100%;
+}
+
+#pollstable.has-controls {
+	top: 44px;
+}
+
+#body-user #pollstable {
+	min-width: 688px;
+}
+
+#headerName-container {
+    padding-left: 15px;
+}
+
+#pollstable tbody tr {
+	transition: background-color 0.3s ease;
+	background-color: #fff;
+	height: 40px;
+}
+
+#polllist tr td.pollname {
+	padding-left: 15px;
+}
+
+table th, table th a {
+	color: #999;
+}
+
+table th, table td {
+	border-bottom: 1px solid #eee;
+	text-align: left;
+	font-weight: normal;
 }
 
 table thead th {
-    font-weight: bold;
-    text-align: left;
-    padding: 3px 5px;
-    background-color: #337AB7;
-    color: #FFF;
-}
-
-table tbody td {
-    text-align: left;
-    padding: 3px 5px;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #337AB7;
-    color: #fff;
-}
-
-tbody tr:nth-child(even):hover {
-    background-color: #CDF5FF;
-    color: #000;
-}
-
-tbody tr:nth-child(even):hover a {
-    color: #000;
-}
-
-tbody tr:nth-child(even) a {
-    color: #fff;
+	background-color: #fff;
 }
